@@ -14,12 +14,12 @@ int main(void) {
   printf("Digite o valor da parte real e imaginaria: ");
   scanf("%f %f", &parte_real, &parte_imaginaria);
   TComplexo numero1 = criarNumeroComplexo(parte_real, parte_imaginaria);
-  imprimeComplexo(numero1);
+  imprimeComplexo(&numero1);
   
   printf("Digite o valor da parte real e imaginaria do segundo numero: ");
   scanf("%f %f", &parte_real, &parte_imaginaria);
   TComplexo numero2 = criarNumeroComplexo(parte_real, parte_imaginaria);
-  imprimeComplexo(numero2);
+  imprimeComplexo(&numero2);
 
   printf("Absoluto\n\n");
   printf("O valor absoluto do numero 1: %f\n\n", absComplexo(numero1));
@@ -27,15 +27,15 @@ int main(void) {
   
   printf("Soma\n\n");
   TComplexo numero3 = soma(numero1, numero2);
-  imprimeComplexo(numero3);
+  imprimeComplexo(&numero3);
   
   printf("Multiplicação\n\n");
   numero3 = multiplicacao(numero1, numero2);
-  imprimeComplexo(numero3);
+  imprimeComplexo(&numero3);
 
   printf("Negacao\n\n");
   numero3 = negacao(numero1);
-  imprimeComplexo(numero3);
+  imprimeComplexo(&numero3);
 
   return 0;
 }

@@ -10,8 +10,8 @@ TComplexo criarNumeroComplexo(float parte_real, float parte_imaginaria){
   return novoComplexo;
 }
 
-void imprimeComplexo(TComplexo numeroComplexo){
-  printf("O Número complexo é: %.3f + %.3fi\n\n", numeroComplexo.parte_real, numeroComplexo.parte_imaginaria);
+void imprimeComplexo(TComplexo *numeroComplexo){
+  printf("O Número complexo é: %.3f + %.3fi\n\n", numeroComplexo->parte_real, numeroComplexo->parte_imaginaria);
 }
 
 float absComplexo(TComplexo numeroComplexo){
