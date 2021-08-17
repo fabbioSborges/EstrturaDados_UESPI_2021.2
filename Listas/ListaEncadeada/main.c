@@ -12,8 +12,15 @@ int main(void) {
   inserirFim(lista1, 1);
   inserirFim(lista1, 2);
   inserirFim(lista1, 3);
+  inserirFim(lista1, 4);
+
+  TNo *primeiro = lista1->prim;
 
   imprimirLista(lista1);
-  printf("deu certo");
+
+  
+  removerFinal(lista1);
+  printf("Endereço do priemiro elemento %d\n\n", primeiro->info);
+  imprimirLista(lista1);
   return 0;
 }
