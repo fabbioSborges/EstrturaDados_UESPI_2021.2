@@ -1,2 +1,2 @@
 language = "c"
-run = "clang-7 -pthread -lm -o main Fila/FilaSequencial/main.c Fila/FilaSequencial/FilaSequencial.c"
+run = "clang-7 -pthread -lm -o main Pilha/PilhaDinamica/main.c Pilha/PilhaDinamica/PilhaDinamica.c"
